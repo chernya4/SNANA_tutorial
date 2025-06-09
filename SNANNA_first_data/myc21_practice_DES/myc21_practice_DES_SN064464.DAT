@@ -1,0 +1,112 @@
+SURVEY:   DES
+SNID:             64464  # integer or string assigned by survey team (required)
+SNTYPE:   1    # integer type; e.g. spec or phot classification
+RA:       52.500000  # deg (avg among obs)
+DEC:      -33.500000  # deg (avg among obs)
+FILTERS:  griz
+PIXSIZE:  0.2700  # arcsec 
+FAKE:     2  # simulated with snlc_sim.exe 
+MWEBV:    0.0120 +- 0.0019  # MW E(B-V) 
+MWXT_MAG:  0.040 0.027 0.020 0.015  # MW mag-XT per band
+PEAKMJD:  56313.285     # estimate for LC fit codes
+MJD_TRIGGER:       56304.094  
+MJD_DETECT_FIRST:  56304.086  
+MJD_DETECT_LAST:   56351.008  
+
+REDSHIFT_HELIO:   0.387691 +- 0.000500  # Helio 
+REDSHIFT_FINAL:   0.387196 +- 0.000500  # CMB (no VPEC corr) 
+MASK_REDSHIFT_SOURCE:   2 # grep MASK_REDSHIFT_SOURCE sndata.h  
+VPEC:                 0.00 +- 0.00      # v_pec correction
+LENSDMU:             0.000 +- 0.000      # DMU from lensing
+
+HOSTGAL_NMATCH:      0  
+HOSTGAL_NMATCH2:     0  
+
+# SIM-truth values
+SIM_MODEL_NAME:      SALT2.JLA-B14  
+SIM_MODEL_INDEX:     6  # grep MODEL_ sntools.h | grep def
+SIM_GENTYPE:         1  # true GENTYPE 
+SIM_TYPE_NAME:       SALT2.JLA-B14 
+SIM_TEMPLATE_INDEX:  0   # template index for SIMSED,NONIa
+SIM_LIBID:           3    # LIBID index in SIMLIB file
+SIM_NGEN_LIBID:      1  
+SIMLIB_MSKOPT:       0  
+SIM_NOBS_UNDEFINED:  0  
+SIM_REDSHIFT_HELIO:  0.38723 
+SIM_REDSHIFT_CMB:    0.38674  
+SIM_REDSHIFT_HOST:   0.38723 
+SIM_REDSHIFT_FLAG:   1  # SNSPEC
+SIM_VPEC:            -0.0   # km/sec) 
+SIM_HOSTLIB_GALID:   -9 
+SIM_HOSTLIB_NPAR:    0 
+SIM_DLMU:            41.5900   # mag   [ -5*log10(10pc/dL) ]
+SIM_LENSDMU:         0.0000   # mag 
+SIM_RA:              52.500000     # deg  
+SIM_DEC:             -33.500000      # deg  
+SIM_MWRV:            3.100    # MilkyWay RV 
+SIM_MWEBV:           0.0110   # MilkyWay E(B-V) 
+SIMOPT_MWCOLORLAW:   99   # MW color-law option 
+SIMOPT_MWEBV:        1   # MWEBV option 
+SIM_WGT_POPULATION:  1.00000  # stretch x color * AV
+SIM_MAGSMEAR_COH:    0.130     # coh model scatter 
+SIM_PEAKMJD:         56314.199    #  true PEAKMJD, days 
+SIM_MJD_EXPLODE:     -9.000    #  true MJD for explosion 
+SIM_THETA:        0.000    # BayeSN lumi-par
+SIM_SALT2alpha:      0.140 
+SIM_SALT2beta:       3.200 
+SIM_SALT2gammaDM:    0.000 
+SIM_SALT2x0:         1.6790e-05 
+SIM_SALT2x1:         0.5801 
+SIM_SALT2c:          0.1339 
+SIM_SALT2mB:         22.5724 
+SIM_SEARCHEFF_MASK:  3  # bits 1,2=> found by software,spec 
+SIM_SEARCHEFF_SPEC:  0.2320  # spectro-search efficiency 
+SIM_TRESTMIN:        -18.04  # days 
+SIM_TRESTMAX:        26.54  # days 
+SIM_RISETIME_SHIFT:  0.0   # days 
+SIM_FALLTIME_SHIFT:  0.0   # days 
+
+# griz filter-dependent quantities vs. 
+SIM_GALFRAC:  -9.000 -9.000 -9.000 -9.000  # F_gal/F_SNpeak for PSF=1''
+SIM_PEAKMAG:  23.356 22.494 22.470 22.662  # 
+SIM_EXPOSURE:     1.0    1.0    1.0    1.0  # 
+
+
+# ============================================ 
+# TEXT LIGHT CURVE OUTPUT: 
+#
+NOBS: 29 
+NVAR: 11 
+VARLIST: MJD BAND FIELD FLUXCAL FLUXCALERR PHOTFLAG GAIN ZPT PSF SKY_SIG SIM_MAGOBS 
+OBS: 56289.1910 DES-g shallow2 -5.65268e+00  6.8529e+00    0  1.000 32.390  1.58 1.101e+02  31.7680 
+OBS: 56292.2300 DES-r shallow2  4.37837e+00  6.8589e+00    0  1.000 31.030  1.47 3.242e+01  25.7153 
+OBS: 56292.2420 DES-i shallow2  1.27935e+01  6.5254e+00    0  1.000 32.280  1.65 9.038e+01  25.5848 
+OBS: 56292.2580 DES-z shallow2  6.57710e+00  8.0274e+00    0  1.000 33.260  1.93 2.360e+02  25.4701 
+OBS: 56298.0390 DES-g shallow2  1.88352e+01  2.3639e+00    0  1.000 32.300  1.44 3.638e+01  24.4973 
+OBS: 56304.0860 DES-r shallow2  7.86135e+01  5.8604e+00 4096  1.000 30.970  1.31 2.760e+01  22.8644 
+TRIGGER:  trigger logic satisfied at MJD_TRIGGER=56304.0938
+OBS: 56304.0940 DES-i shallow2  7.55440e+01  5.0491e+00 4096  1.000 32.170  1.34 7.619e+01  22.8863 
+OBS: 56304.1020 DES-z shallow2  6.91391e+01  5.7367e+00 4096  1.000 33.200  1.43 2.142e+02  22.9223 
+OBS: 56308.0430 DES-g shallow2  5.02908e+01  1.8652e+00 4096  1.000 32.410  1.09 3.955e+01  23.3070 
+OBS: 56312.1130 DES-r shallow2  9.13838e+01  8.2179e+00 4096  1.000 30.970  1.61 3.270e+01  22.5005 
+OBS: 56312.1250 DES-i shallow2  9.34656e+01  8.1385e+00 4096  1.000 32.110  1.70 9.280e+01  22.4944 
+OBS: 56313.0470 DES-z shallow2  7.24412e+01  1.0544e+01 4096  1.000 33.130  2.32 2.284e+02  22.6761 
+OBS: 56317.1410 DES-g shallow2  3.46366e+01  5.4298e+00 4096  1.000 32.370  1.55 8.651e+01  23.4772 
+OBS: 56320.1020 DES-r shallow2  9.51188e+01  8.3145e+00 4096  1.000 31.040  1.68 3.397e+01  22.6080 
+OBS: 56320.1090 DES-i shallow2  1.08331e+02  7.8661e+00 4096  1.000 32.220  1.78 9.470e+01  22.4917 
+OBS: 56321.0430 DES-z shallow2  8.60929e+01  6.3546e+00 4096  1.000 33.200  1.43 2.373e+02  22.7113 
+OBS: 56321.1250 DES-g shallow2  3.39916e+01  5.7239e+00    0  1.000 31.910  1.35 6.811e+01  23.6897 
+OBS: 56333.0430 DES-r shallow2  4.91539e+01  5.8281e+00    0  1.000 30.940  1.29 2.760e+01  23.2829 
+OBS: 56333.0510 DES-i shallow2  6.01272e+01  5.1670e+00 4096  1.000 32.140  1.34 7.619e+01  22.9597 
+OBS: 56333.0700 DES-g shallow2  1.45660e+01  1.7240e+00 4096  1.000 32.310  1.05 3.638e+01  24.5967 
+OBS: 56333.0860 DES-z shallow2  4.95154e+01  6.5429e+00 4096  1.000 33.190  1.62 2.142e+02  23.2567 
+OBS: 56341.0900 DES-g shallow2  5.30649e+00  3.0688e+00    0  1.000 32.360  1.40 5.325e+01  25.3506 
+OBS: 56341.1130 DES-r shallow2  4.12379e+01  9.7279e+00    0  1.000 30.970  2.03 3.117e+01  23.8193 
+OBS: 56341.1250 DES-i shallow2  4.85038e+01  9.9946e+00    0  1.000 32.110  2.22 8.780e+01  23.2347 
+OBS: 56344.9920 DES-z shallow2  4.47614e+01  8.4550e+00    0  1.000 33.170  1.89 2.333e+02  23.3546 
+OBS: 56350.0700 DES-g shallow2  4.95056e+00  5.6904e+00    0  1.000 32.400  2.18 6.635e+01  26.0601 
+OBS: 56350.0820 DES-r shallow2  1.31047e+01  1.0976e+01    0  1.000 30.980  2.37 3.055e+01  24.3875 
+OBS: 56350.0980 DES-i shallow2  2.30718e+01  1.1866e+01    0  1.000 32.070  2.65 8.431e+01  23.4961 
+OBS: 56351.0080 DES-z shallow2  6.14447e+01  8.2379e+00 4096  1.000 33.200  2.06 2.142e+02  23.3929 
+END_PHOTOMETRY: 
+

@@ -1,0 +1,8 @@
+For Problem 1 - part g: lets make sure that we define what mu error means. Like clearly write out formula for how one defines mu error.
+For problem 1 - part h: lets make sure that mu shift is defined as welll: like is it mu evalueted with Kurvature term minus mu evaluated without curvature term and without radiation term. 
+ Maybe also see if there's something else to be accounted for like are we still accounting for this and that parameter.
+
+
+ There's also the Mu sensitivity issue in problem one but this one may be Mykola's fault and stuff.
+
+ For Problem 1 - part j: Tie in the instruction to part i where assumptions are made the same way. 

@@ -1,0 +1,101 @@
+SURVEY:   DES
+SNID:             57853  # integer or string assigned by survey team (required)
+SNTYPE:   1    # integer type; e.g. spec or phot classification
+RA:       52.500000  # deg (avg among obs)
+DEC:      -36.500000  # deg (avg among obs)
+FILTERS:  griz
+PIXSIZE:  0.2700  # arcsec 
+FAKE:     2  # simulated with snlc_sim.exe 
+MWEBV:    0.0120 +- 0.0019  # MW E(B-V) 
+MWXT_MAG:  0.039 0.026 0.019 0.015  # MW mag-XT per band
+PEAKMJD:  56324.527     # estimate for LC fit codes
+MJD_TRIGGER:       56312.055  
+MJD_DETECT_FIRST:  56312.047  
+MJD_DETECT_LAST:   56348.055  
+
+REDSHIFT_HELIO:   0.223831 +- 0.000500  # Helio 
+REDSHIFT_FINAL:   0.223422 +- 0.000500  # CMB (no VPEC corr) 
+MASK_REDSHIFT_SOURCE:   2 # grep MASK_REDSHIFT_SOURCE sndata.h  
+VPEC:                 0.00 +- 0.00      # v_pec correction
+LENSDMU:             0.000 +- 0.000      # DMU from lensing
+
+HOSTGAL_NMATCH:      0  
+HOSTGAL_NMATCH2:     0  
+
+# SIM-truth values
+SIM_MODEL_NAME:      SALT2.JLA-B14  
+SIM_MODEL_INDEX:     6  # grep MODEL_ sntools.h | grep def
+SIM_GENTYPE:         1  # true GENTYPE 
+SIM_TYPE_NAME:       SALT2.JLA-B14 
+SIM_TEMPLATE_INDEX:  0   # template index for SIMSED,NONIa
+SIM_LIBID:           2    # LIBID index in SIMLIB file
+SIM_NGEN_LIBID:      1  
+SIMLIB_MSKOPT:       0  
+SIM_NOBS_UNDEFINED:  0  
+SIM_REDSHIFT_HELIO:  0.22320 
+SIM_REDSHIFT_CMB:    0.22279  
+SIM_REDSHIFT_HOST:   0.22320 
+SIM_REDSHIFT_FLAG:   1  # SNSPEC
+SIM_VPEC:            -0.0   # km/sec) 
+SIM_HOSTLIB_GALID:   -9 
+SIM_HOSTLIB_NPAR:    0 
+SIM_DLMU:            40.2145   # mag   [ -5*log10(10pc/dL) ]
+SIM_LENSDMU:         0.0000   # mag 
+SIM_RA:              52.500000     # deg  
+SIM_DEC:             -36.500000      # deg  
+SIM_MWRV:            3.100    # MilkyWay RV 
+SIM_MWEBV:           0.0107   # MilkyWay E(B-V) 
+SIMOPT_MWCOLORLAW:   99   # MW color-law option 
+SIMOPT_MWEBV:        1   # MWEBV option 
+SIM_WGT_POPULATION:  1.00000  # stretch x color * AV
+SIM_MAGSMEAR_COH:    0.063     # coh model scatter 
+SIM_PEAKMJD:         56325.770    #  true PEAKMJD, days 
+SIM_MJD_EXPLODE:     -9.000    #  true MJD for explosion 
+SIM_THETA:        0.000    # BayeSN lumi-par
+SIM_SALT2alpha:      0.140 
+SIM_SALT2beta:       3.200 
+SIM_SALT2gammaDM:    0.000 
+SIM_SALT2x0:         5.7704e-05 
+SIM_SALT2x1:         0.0854 
+SIM_SALT2c:          0.1233 
+SIM_SALT2mB:         21.2320 
+SIM_SEARCHEFF_MASK:  3  # bits 1,2=> found by software,spec 
+SIM_SEARCHEFF_SPEC:  0.8204  # spectro-search efficiency 
+SIM_TRESTMIN:        -17.77  # days 
+SIM_TRESTMAX:        18.24  # days 
+SIM_RISETIME_SHIFT:  0.0   # days 
+SIM_FALLTIME_SHIFT:  0.0   # days 
+
+# griz filter-dependent quantities vs. 
+SIM_GALFRAC:  -9.000 -9.000 -9.000 -9.000  # F_gal/F_SNpeak for PSF=1''
+SIM_PEAKMAG:  21.536 21.259 21.299 -9.000  # 
+SIM_EXPOSURE:     1.0    1.0    1.0    1.0  # 
+
+
+# ============================================ 
+# TEXT LIGHT CURVE OUTPUT: 
+#
+NOBS: 18 
+NVAR: 11 
+VARLIST: MJD BAND FIELD FLUXCAL FLUXCALERR PHOTFLAG GAIN ZPT PSF SKY_SIG SIM_MAGOBS 
+OBS: 56304.0430 DES-g shallow1  2.18567e+00  1.8235e+00    0  1.000 32.310  1.14 3.638e+01  27.6101 
+OBS: 56304.0510 DES-r shallow1  2.19332e+00  5.2145e+00    0  1.000 30.950  1.20 2.760e+01  26.1899 
+OBS: 56304.0550 DES-i shallow1 -2.27473e+00  4.1354e+00    0  1.000 32.110  1.06 7.619e+01  26.1547 
+OBS: 56312.0470 DES-g shallow1  8.15587e+01  5.2866e+00 4096  1.000 32.280  2.04 5.776e+01  22.7245 
+TRIGGER:  trigger logic satisfied at MJD_TRIGGER=56312.0547
+OBS: 56312.0550 DES-r shallow1  1.00282e+02  8.9023e+00 4096  1.000 30.980  1.79 3.218e+01  22.4740 
+OBS: 56312.0660 DES-i shallow1  9.23936e+01  5.7414e+00 4096  1.000 32.170  1.28 9.103e+01  22.4193 
+OBS: 56320.0590 DES-g shallow1  2.22477e+02  3.9862e+00 4096  1.000 32.290  1.04 8.057e+01  21.6115 
+OBS: 56320.0700 DES-r shallow1  2.54361e+02  7.1198e+00 4096  1.000 30.980  1.25 3.392e+01  21.4279 
+OBS: 56320.0860 DES-i shallow1  2.68718e+02  7.1144e+00 4096  1.000 32.210  1.56 9.449e+01  21.4279 
+OBS: 56332.0940 DES-g shallow1  1.92920e+02  2.8571e+00 4096  1.000 32.310  1.52 3.638e+01  21.8053 
+OBS: 56332.1020 DES-r shallow1  2.78258e+02  7.7897e+00 4096  1.000 31.000  1.70 2.760e+01  21.3427 
+OBS: 56332.1090 DES-i shallow1  2.86849e+02  6.8702e+00 4096  1.000 32.180  1.80 7.619e+01  21.3639 
+OBS: 56340.0430 DES-g shallow1  1.00208e+02  3.6827e+00 4096  1.000 32.360  1.78 4.807e+01  22.4526 
+OBS: 56340.0550 DES-r shallow1  2.15674e+02  8.7083e+00 4096  1.000 30.960  1.77 2.994e+01  21.7046 
+OBS: 56340.0660 DES-i shallow1  1.82652e+02  8.1415e+00 4096  1.000 32.170  1.97 8.381e+01  21.7775 
+OBS: 56348.0270 DES-g shallow1  5.54638e+01  4.2606e+00 4096  1.000 32.160  1.09 7.828e+01  23.3134 
+OBS: 56348.0430 DES-r shallow1  1.32048e+02  7.4574e+00 4096  1.000 30.830  1.23 3.317e+01  22.1064 
+OBS: 56348.0550 DES-i shallow1  1.70789e+02  6.5505e+00 4096  1.000 32.020  1.24 9.222e+01  21.9877 
+END_PHOTOMETRY: 
+

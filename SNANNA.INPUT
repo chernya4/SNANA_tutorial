@@ -1,0 +1,24 @@
+SNANA_VERSION: v11_09
+GENVERSION:    SIM_HUBBLE_EXAMPLE
+GENPREFIX:     SN
+
+# Model and redshift
+GENMODEL:      SALT2
+GENFILTERS:    ugriz
+GENRANGE_REDSHIFT: 0.01 1.0
+GENSIGMA_REDSHIFT: 0.0
+
+# Simple time settings
+GENRANGE_PEAKMJD: 59000.0 59001.0
+GENSIGMA_PEAKMJD: 0.0
+
+# Generate only distances — no light curves needed
+NGEN_LC:        10000
+SIMLIB_DUMP:    1
+GENSOURCE:      RANDOM
+
+# Minimal simlib to enable generation
+SIMLIB_FILE:    $SNANA_DIR/examples/SIMLIBS/MOCK_FLUXCAL.SIMLIB
+
+# DUMP format: CID = SN ID, ZCMB = redshift, DLMAG = distance modulus
+SIMGEN_DUMP:    3 CID ZCMB DLMAG
